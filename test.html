@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Input Border</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .animated-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+    width: 250px;
+    background-image: linear-gradient(to right, #000 0%, #000 100%);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease, background-position 0.3s ease;
+  }
+
+  .animated-input:focus {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+  }
+</style>
+</head>
+<body>
+
+<input type="text" class="animated-input" placeholder="Введите текст">
+
+</body>
+</html>

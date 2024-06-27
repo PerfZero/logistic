@@ -1,0 +1,20 @@
+.animated-input {
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .animated-input:focus {
+    border-color: #337ab7;
+    animation: animate-border 0.5s forwards;
+  }
+  
+  @keyframes animate-border {
+    0% {
+      border-color: #ccc;
+      border-width: 1px 0 1px 1px;
+    }
+    100% {
+      border-color: #337ab7;
+      border-width: 1px;
+    }
+  }

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/3ed1693da2d7d3c28d28b79a8a1a6b0e?family=Cygre"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="/"
+            ><img
+              src="assets/img/logo.svg"
+              width="142"
+              height="56"
+              alt="ETS Logistics Company"
+            />
+          </a>
+        </div>
+        <div class="main-menu-m">
+          <div class="div-nav-top">
+            <div class="text-up-nav">
+              <div>
+                Доставка грузов автотранспортом из стран Европейского Союза в РФ
+              </div>
+            </div>
+            <div class="gov-menu">
+              <a href="#">Представительства</a>
+              <div class="dropdown arrow-down">
+                <a href="#" class="dropbtn">Турция, Москва</a>
+                <div class="dropdown-content">
+                  <p>Категория 1</p>
+                  <p>Категория 2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rigth-men">
+            <nav class="nav">
+              <div class="dropdown">
+                <a class="dropbtn" href="/about.html">О компании</a>
+              </div>
+              <div class="dropdown arrow-down">
+                <a class="dropbtn" href="#">Страны</a>
+                <div class="dropdown-content">
+                  <div class="wrapper">
+                    <div class="dropdown-menu-cust">
+                      <a href="#">Страны</a>
+                      <div class="drop-down-list">
+                        <p>Россия</p>
+                        <p>Европа</p>
+                      </div>
+                      <div class="drop-down-list">
+                        <p>Казахстан</p>
+                        <p>Молдова</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown arrow-down">
+                <a class="dropbtn" href="#">Услуги</a>
+                <div class="dropdown-content">
+                  <div class="wrapper">
+                    <div class="dropdown-menu-cust">
+                      <a href="#">Услуги</a>
+                      <div class="drop-down-list">
+                        <a href="/service-1.html"><p>Доставка из Еворопы</p></a>
+                        <a href="/service-2.html"><p>Доставка из Еворопы</p></a>
+                      </div>
+                      <div class="drop-down-list">
+                        <a href="/service-3.html"><p>Доставка из Еворопы</p></a>
+                        <a href="/service-4.html"><p>Доставка из Еворопы</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown arrow-down">
+                <a class="dropbtn" href="#">Товары</a>
+                <div class="dropdown-content">
+                  <div class="wrapper">
+                    <div class="dropdown-menu-cust">
+                      <a href="#">Товары</a>
+                      <div class="drop-down-list">
+                        <p>Мешок с картошкой</p>
+                        <p>Мешок с морковокой</p>
+                      </div>
+                      <div class="drop-down-list">
+                        <p>Коровы</p>
+                        <p>Доставка из Еворопы</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn" href="/expalme.html">Проекты</a>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn" href="/contact.html">Контакты</a>
+              </div>
+            </nav>
+
+            <div class="contact-cont">
+              <div class="contat">
+                <div class="dropdown arrow-down">
+                  <a class="dropbtn" href="#">+7 (812) 332-46-27</a>
+                  <div class="dropdown-content">
+                    <p class="main-tel">Основной телефон</p>
+                    <p class="tel">+7 (812) 98 50 50 1</p>
+                    <hr />
+                    <p class="main-mail">Электроная почта</p>
+                    <p class="mail">info@ets-logistic.ru</p>
+                    <hr />
+                    <div class="header__social">
+                      <a href="#">
+                        Whatsapp<img
+                          src="/assets/img/icon/whats.svg"
+                          alt="WhatsApp"
+                      /></a>
+                      <a href="#"
+                        >Telegram<img
+                          src="/assets/img/icon/th.svg"
+                          alt="Telegram"
+                      /></a>
+                      <a href="#"
+                        >Viber<img src="/assets/img/icon/viber.svg" alt="viber"
+                      /></a>
+                    </div>
+                    <div class="button">
+                      <p>Связаться</p>
+                      <a href="#" class="btn"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="callback">
+                <p>Связаться</p>
+              </div>
+            </div>
+
+            <div id="overlay" class="overlay"></div>
+
+            <div id="side-menu" class="side-menu">
+              <div class="side-menu-content">
+                <h4>Связаться с нами</h4>
+                <form id="contact-form">
+                  <label for="name">Ваше имя</label><br />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="animated-input"
+                    placeholder="Имя"
+                    required
+                  /><br /><br />
+
+                  <label for="phone">Ваш телефон</label><br />
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="animated-input"
+                    name="phone"
+                    placeholder="Телефон"
+                    required
+                  /><br /><br />
+
+                  <label for="email">Ваша почта</label><br />
+                  <input
+                    type="email"
+                    id="email"
+                    class="animated-input"
+                    name="email"
+                    placeholder="Электронная почта"
+                    required
+                  /><br /><br />
+
+                  <button class="button" type="submit">
+                    Отправить
+                    <a class="btn"></a></button
+                  ><br /><br />
+
+                  <label class="sol" for="agree"
+                    >Нажимая кнопку «Отправить», я соглашаюсь с <u>Офертой </u>и
+                    <u>Политикой конфиденциальности</u></label
+                  >
+                </form>
+                <hr />
+                <h5>Или напишите нам в мессенджере</h5>
+                <div class="side-bar_social">
+                  <div class="side-bar-socila__item">
+                    <img src="/assets/img/icon/whats.svg" alt="" />
+                    <p>Whatsapp</p>
+                  </div>
+                  <div class="side-bar-socila__item">
+                    <img src="/assets/img/icon/th.svg" alt="" />
+                    <p>Telegram</p>
+                  </div>
+                  <div class="side-bar-socila__item">
+                    <img src="/assets/img/icon/viber.svg" alt="" />
+                    <p>Viber</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span id="close-btn" class="close-btn">&times;</span>
+          </div>
+        </div>
+        <div class="burger-menu">
+          <i class="cyrcle"></i>
+          <p>Меню</p>
+          <label id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <ul>
+            <li>О компании</li>
+            <li class="mobile-item">
+              Страны
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <li>Доставка из Еворопы</li>
+                <li>Доставка из Еворопы</li>
+                <li>Доставка из Еворопы</li>
+              </ul>
+            </li>
+            <li class="mobile-item">
+              Услуги
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <li>Консультации</li>
+                <li>Разработка</li>
+                <li>Аудит</li>
+                <li>Аудит</li>
+              </ul>
+            </li>
+            <li class="mobile-item">
+              Товары
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <li>Электроника</li>
+                <li>Одежда</li>
+                <li>Продукты</li>
+              </ul>
+            </li>
+            <li>Проекты</li>
+            <li>Контакты</li>
+          </ul>
+          <div class="city">
+            <a href="" class="activ-city">Санкт-Петерург</a>
+            <a href="">Москва</a>
+            <a href="">Турция</a>
+          </div>
+          <div class="wrpa-menu_mobile">
+            <div class="contact-mobile-menu">
+              <p class="main-text__menu-mobile">Основной телефон</p>
+              <p class="main-tel__menu-mobile">+7 (812) 98 50 50 1</p>
+            </div>
+            <div class="contact-mobile-menu">
+              <p class="main-text__menu-mobile">Электроная почта</p>
+              <p class="main-tel__menu-mobile">info@ets-logistic.ru</p>
+            </div>
+          </div>
+          <div class="header__social">
+            <a href="#">
+              Whatsapp<img src="/assets/img/icon/whats.svg" alt="WhatsApp"
+            /></a>
+            <a href="#"
+              >Telegram<img src="/assets/img/icon/th.svg" alt="Telegram"
+            /></a>
+            <a href="#"
+              >Viber<img src="/assets/img/icon/viber.svg" alt="viber"
+            /></a>
+          </div>
+          <div class="bnt_mobile">
+          <div class="button">
+            <p>Связаться</p>
+            <a href="#" class="btn"></a>
+          </div>
+        </div>
+        </div>
+        <div class="line"></div>
+      </div>
+    </header>
+    <main>
+      <div class="contain-wrap">
+        <div class="wrapper image-backgraund"></div>
+      </div>
+      <!-- <div class="container">
+        <div class="main-section main-tet">
+          <h1>
+            Импорт и экспорт товаров <br />и оборудования из европы <br />в
+            россию и обратно под ключ
+          </h1>
+          <div class="button">
+            <p>Запросить коммерческое предложение</p>
+            <a href="#" class="btn"></a>
+          </div>
+          <div class="adventeg__wrap">
+            <ul class="adventeg__list">
+              <li class="adventeg__item">
+                Закупим товары, включая санкционные под свои контракты и
+                организуем доставку в Россию
+              </li>
+              <li class="adventeg__item">
+                Подберем оптимальный маршрут для вашего груза и легально
+                доставим до склада
+              </li>
+              <li class="adventeg__item">
+                Организуем документооборот и работу с перевозчиком в режиме
+                «одного окна»
+              </li>
+              <li class="adventeg__item">
+                Поможем совершить оплату в любой валюте в любую страну мира
+                по вашему контракту
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="container block--modifier">
+        <div class="line_main-block">
+          <h2>Почему выбирают нас?</h2>
+        </div>
+        <div class="maon__block-element">
+          <div class="block__element">
+            <div class="block__element-item">
+              <img src="/assets/img/5_1.svg" alt="" width="52" height="52" />
+              <h3>Работаем с любыми типами товаров</h3>
+              <p>
+                Поможем доставить продукты, оборудование, запчасти, автомобили и
+                любые товары. Если потребуется — поможем получить необходимые
+                лицензии
+              </p>
+            </div>
+
+            <div class="block__element-item">
+              <img src="/assets/img/5_2.svg" alt="" width="52" height="52" />
+              <h3>Поможем найти товар и организуем доставку «под ключ»</h3>
+              <p>
+                Просчитаем маршрут, оформим все необходимые документы и доставим
+                груз до вашего склада. Поможем выкупить груз и перевести деньги
+                поставщику.
+              </p>
+            </div>
+
+            <div class="block__element-item">
+              <img src="/assets/img/5_3.svg" alt="" width="52" height="52" />
+              <h3>
+                Без посредников. Есть «белая» компания в России и в Турции
+              </h3>
+              <p>
+                В цепочке нет «лишних» посредников, ленивых Турков
+                и «сомнительных» партнёров. Вы работаете с одой компанией,
+                у которой есть «свой филиал» в Турции и головная компания
+                в России.
+              </p>
+            </div>
+
+            <div class="block__element-item">
+              <img src="/assets/img/5_4.svg" alt="" width="52" height="52" />
+              <h3>Подберем оптимальные логистические маршруты</h3>
+              <p>
+                За более чем 7 лет, которые мы занимаемся экспортом и импортом
+                товаров мы выработали лучшие логистические цепочки, а наши
+                специалисты имеют колоссальный опыт.
+              </p>
+            </div>
+          </div>
+          <div class="aside--block">
+            <h3>Несколько представительств в разных странах мира</h3>
+            <div class="county--block">
+              <div class="county--block_item">
+                <p>Россия</p>
+                <img
+                  src="/assets/img/russia.svg"
+                  alt=""
+                  class="conty--block__contry"
+                />
+              </div>
+              <div class="county--block_item">
+                <p>Беларусь</p>
+                <img
+                  src="/assets/img/belarus.svg"
+                  alt=""
+                  class="conty--block__contry"
+                />
+              </div>
+              <div class="county--block_item">
+                <p>Турция</p>
+                <img
+                  src="/assets/img/tirkis.svg"
+                  alt=""
+                  class="conty--block__contry"
+                />
+              </div>
+              <div class="county--block_item">
+                <p>Европа</p>
+                <img
+                  src="/assets/img/eur.svg"
+                  alt=""
+                  class="conty--block__contry"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="services_wrap">
+            <div class="line_main-block white">
+              <h2 class="services__title">
+                Помогаем обойти санкции и работать с европой через собственные
+                компании в турции
+              </h2>
+            </div>
+            <div class="services__advantages">
+              <div class="services__advantage">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">Доставка из Европы</h3>
+                  <p class="services__advantage-description">
+                    Поможем с выкупом товаров по вашим контрактам в Европе. И
+                    организуем доставку до склада в России.
+                  </p>
+                </div>
+                <button class="services_bth"></button>
+              </div>
+              <div class="services__advantage">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">Отправка в Европу</h3>
+                  <p class="services__advantage-description">
+                    Организуем доставку ваших грузов в любую страну Европе,
+                    на 100% легально. Поможем получить деньги от покупателей.
+                  </p>
+                </div>
+                <button class="services_bth"></button>
+              </div>
+              <div class="services__advantage">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">Денежные переводы</h3>
+                  <p class="services__advantage-description">
+                    Поможем оплатить инвойсы от поставщиков. На 100% легально и
+                    безопасно. Без посредников.
+                  </p>
+                </div>
+                <button class="services_bth"></button>
+              </div>
+              <div class="services__advantage">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">Логистика и ВЭД</h3>
+                  <p class="services__advantage-description">
+                    Оказываем комплексную помощь в закупке необходимых товаров
+                    из Европы и доставляем груз заказчику со всеми официальными
+                    документами.
+                  </p>
+                </div>
+                <button class="services_bth"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-types">
+        <div class="container">
+          <div class="product-types__row">
+            <div class="product-types__column product-types__column--left">
+              <h2 class="product-types__title">
+                Работаем с любыми типами товаров и оборудования
+              </h2>
+              <img
+                src="/assets/img/repair.png"
+                width="546"
+                height="300"
+                alt=""
+              />
+            </div>
+            <div class="product-types__column product-types__column--right">
+              <ul class="product-types__list">
+                <li class="product-types__item" data-color="#FF0000">
+                  <p>Микроэлектроника</p>
+                  <img src="/assets/img/icon/micro-e.svg" alt="" />
+                </li>
+                <li class="product-types__item" data-color="#00FF00">
+                  <p>Оборудование</p>
+                  <img src="/assets/img/icon/6_2.svg" alt="" />
+                </li>
+                <li class="product-types__item" data-color="#0000FF">
+                  <p>Запчасти</p>
+                  <img src="/assets/img/icon/6_3.svg" alt="" />
+                </li>
+                <li class="product-types__item" data-color="#FFFF00">
+                  <p>Бытовая химия</p>
+                  <img src="/assets/img/icon/6_4.svg" alt="" />
+                </li>
+                <li class="product-types__item" data-color="#FF00FF">
+                  <p>Бытовая техника и мебель</p>
+                  <img src="/assets/img/icon/6_5.svg" alt="" />
+                </li>
+                <li class="product-types__item" data-color="#00FFFF">
+                  <p>Медикаменты</p>
+                  <img src="/assets/img/icon/6_6.svg" alt="" />
+                </li>
+                <li class="product-types__item" data-color="#FFA500">
+                  <p>Продукты питания</p>
+                  <img src="/assets/img/icon/6_7.svg" alt="" />
+                </li>
+                <li class="product-types__item" data-color="#800080">
+                  <p>Одежда</p>
+                  <img src="/assets/img/icon/6_8.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="business-plan">
+        <div class="container">
+          <div class="business-plan__row ">
+            <hr />
+            <div class="business-plan__column">
+              <h2 class="business-plan__title">
+                Планируете открыть <br />бизнес в ЕС или Турции и работать без
+                посредников?
+              </h2>
+              <p>
+                Мы уже открыли свою компанию и знаем о всех подводных камнях,
+                поэтому готовы провести вас по всем шагам
+              </p>
+            </div>
+            <div class="business-plan__two-row">
+              <div class="business-plan__two-row-item page-s2">
+                <img
+                  src="/assets/img/icon/help.svg"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <p>
+                  Мы уже открыли свою компанию и знаем о всех подводных камнях,
+                  поэтому готовы провести вас по всем шагам
+                </p>
+              </div>
+              <div class="business-plan__two-row-item page-s2">
+                <img
+                  src="/assets/img/icon/register.svg"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <p>
+                  Мы уже открыли свою компанию и знаем о всех подводных камнях,
+                  поэтому готовы провести вас по всем шагам
+                </p>
+              </div>
+              <div class="business-plan__two-row-item page-s2">
+                <img
+                  src="/assets/img/icon/searc.svg"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <p>
+                  Мы уже открыли свою компанию и знаем о всех подводных камнях,
+                  поэтому готовы провести вас по всем шагам
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="completed-projects">
+        <div class="container">
+          <div class="line_main-block">
+          <h2 class="completed-projects__title title_mian">
+            Выполненные проекты
+          </h2>
+          </div>
+          <div class="completed-projects__row">
+            <div class="completed-projects__column">
+              <div class="completed-projects__card">
+                <img src="/assets/img/siems.png" alt="" />
+                <div class="completed-projects__overlay">
+                  <div class="completed-projects__overlay-text">
+                    <h3 class="completed-projects__name">
+                      Cтанки для обработки металла siemens
+                    </h3>
+                    <p class="completed-projects__details">Сумма: €120 000</p>
+                    <p class="completed-projects__details">Сроки: 9 недель</p>
+                  </div>
+                  <button class="services_bth"></button>
+                </div>
+              </div>
+            </div>
+            <div class="completed-projects__column">
+              <div class="completed-projects__card">
+                <img src="/assets/img/depo.png" alt="" />
+                <div class="completed-projects__overlay">
+                  <div class="completed-projects__overlay-text">
+                    <h3 class="completed-projects__name">
+                      Перевозка компрессорной установки
+                    </h3>
+                    <p class="completed-projects__details">Сумма: €150 000</p>
+                    <p class="completed-projects__details">Сроки: 12 недель</p>
+                  </div>
+                  <button class="services_bth"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <p>Все проекты</p>
+            <a href="#" class="btn"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cargo-cost-calculation">
+        <div class="container">
+          <div class="section-delivery__title_main">
+            <h2 class="section-delivery__title title_mian">Расчет стоимости</h2>
+          </div>
+          <form class="cargo-cost-calculation__form">
+            <fieldset class="cargo-cost-calculation__fieldset">
+              <legend class="cargo-cost-calculation__legend">
+                Данные о грузе
+              </legend>
+              <div class="cargo-cost-calculation__row">
+                <label class="cargo-cost-calculation__label" for="country"
+                  >Страна забора:</label
+                >
+                <select
+                  class="cargo-cost-calculation__input animated-input"
+                  id="country"
+                  name="country"
+                >
+                  <option value="">Выберите страну</option>
+                </select>
+              </div>
+              <div class="cargo-cost-calculation__row">
+                <label class="cargo-cost-calculation__label" for="city"
+                  >Город доставки:</label
+                >
+                <input
+                  class="cargo-cost-calculation__input animated-input"
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Город"
+                />
+              </div>
+              <div class="cargo-cost-calculation__row">
+                <label class="cargo-cost-calculation__label" for="cargo-type"
+                  >Тип груза:</label
+                >
+                <select
+                  class="cargo-cost-calculation__input animated-input"
+                  id="cargo-type"
+                  name="cargo-type"
+                >
+                  <option value="">Выберите тип груза</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="cargo-cost-calculation__fieldset pd-48">
+              <legend class="cargo-cost-calculation__legend">
+                Контактные данные
+              </legend>
+              <div class="cargo-cost-calculation__label_main">
+                <div class="cargo-cost-calculation__row_name">
+                  <label
+                    class="cargo-cost-calculation__label"
+                    for="company-name"
+                    >Наименование компании:</label
+                  >
+                  <input
+                    class="cargo-cost-calculation__input animated-input"
+                    type="text"
+                    id="company-name"
+                    name="company-name"
+                    placeholder="Наименование"
+                  />
+                </div>
+                <div class="cargo-cost-calculation__row_1">
+                  <div class="cargo-cost-calculation__row">
+                    <label class="cargo-cost-calculation__label" for="name"
+                      >Ваше имя:</label
+                    >
+                    <input
+                      class="cargo-cost-calculation__input animated-input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Имя"
+                    />
+                  </div>
+                  <div class="cargo-cost-calculation__row">
+                    <label class="cargo-cost-calculation__label" for="phone"
+                      >Ваш телефон:</label
+                    >
+                    <input
+                      class="cargo-cost-calculation__input animated-input"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="Телефон"
+                    />
+                  </div>
+                  <div class="cargo-cost-calculation__row">
+                    <label class="cargo-cost-calculation__label" for="email"
+                      >Ваша почта:</label
+                    >
+                    <input
+                      class="cargo-cost-calculation__input animated-input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Почта"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="button">
+              <p>Получить расчет стоимости</p>
+              <a href="#" class="btn"></a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="info-block">
+        <div class="container">
+          <div class="info-block__row">
+            <div class="info-block__column-one">
+              <h2>
+                В основе работы мы ставим скорость, легкость и гарантию
+                исполнения обязательств
+              </h2>
+              <ul class="info-block__list">
+                <li class="info-block__item">
+                  Наши процессы прозрачны даже для клиента – мы надежные
+                  партнеры
+                </li>
+                <li class="info-block__item">
+                  Мы находим способы решать возникающие сложности, сообща с
+                  клиентом
+                </li>
+                <li class="info-block__item">
+                  Мы предлагаем персонифицированную коммуникацию
+                </li>
+                <li class="info-block__item">
+                  Мы предоставляем сервисы, в том числе, которые не могут
+                  предоставить другие компании
+                </li>
+                <li class="info-block__item">
+                  Мы создаем комплексный сервис по транспортировке грузов
+                </li>
+              </ul>
+            </div>
+            <div class="info-block__column-two">
+              <div class="image-cargo__block">
+                <img src="/assets/img/side_img.png" width="384" height="255" />
+              </div>
+              <h2 class="image-cargo__block-title">Есть вопросы?</h2>
+              <p class="image-cargo__block-peren">
+                Свяжитесь с нами для бесплатной констультации
+              </p>
+              <p class="block_cont">
+                Телефон: <a href="tel:+123456789">+1 234 567 89</a>
+              </p>
+              <p class="block_cont">
+                Email: <a href="mailto:info@example.com">info@example.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="services_wrap help_serviec">
+            <h2 class="services__title help_serviec-title">
+              Мы предлагаем полный комплекс услуг
+            </h2>
+            <div class="services__advantages">
+              <div class="services__advantage">
+                <div class="services__text complex">
+                  <img
+                    src="/assets/img/icon/world.svg"
+                    width="52"
+                    height="52"
+                  />
+                  <p class="services__advantage-description">
+                    Экспорт и импорт товаров из любой точки мира.
+                  </p>
+                </div>
+              </div>
+              <div class="services__advantage">
+                <div class="services__text complex">
+                  <img
+                    src="/assets/img/icon/document.svg"
+                    width="52"
+                    height="52"
+                  />
+                  <p class="services__advantage-description">
+                    Комплексные услуги по логистике и ВЭД.
+                  </p>
+                </div>
+              </div>
+              <div class="services__advantage">
+                <div class="services__text complex">
+                  <img src="/assets/img/icon/pay.svg" width="52" height="52" />
+                  <p class="services__advantage-description">
+                    Совершение платежей в любой банк мира.
+                  </p>
+                </div>
+              </div>
+              <div class="services__advantage">
+                <div class="services__text complex">
+                  <img
+                    src="/assets/img/icon/company.svg"
+                    width="52"
+                    height="52"
+                  />
+                  <p class="services__advantage-description">
+                    Поможем открыть компанию в Турции или ЕС.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="geography">
+        <div class="container">
+          <hr />
+          <h2 class="title_mian">География объектов</h2>
+          <div class="map-container">
+            <div id="map" class="map">
+              <div
+                class="marker"
+                style="top: 47%; left: 39%"
+                onclick="showInfo('object1')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 30%; left: 30%"
+                onclick="showInfo('object2')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 32%; left: 57.3%"
+                onclick="showInfo('object3')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 73%; left: 3%"
+                onclick="showInfo('object4')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 33%; left: 10.4%"
+                onclick="showInfo('object5')"
+              ></div>
+              <div id="info-box" class="info-box">
+                <p id="info-param">Поставка «под ключ»</p>
+                <h3 id="info-title">Название объекта</h3>
+                <p id="info-description">
+                  Описание объекта будет отображаться здесь.
+                </p>
+                <div class="button">
+                  <p>Подробнее</p>
+                  <a href="#" class="btn"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer_wrap">
+          <div class="column-one">
+            <img
+              src="/assets/img/icon/logo_footer.svg"
+              width="132"
+              height="46"
+            />
+            <p>
+              Доставка грузов автотранспортом из стран Европейского Союза в РФ
+            </p>
+          </div>
+          <div class="column-two">
+            <div class="main-menu-footer">
+              <h4>О Компании</h4>
+              <ul>
+                <li class="main-menu-item">О Компании</li>
+                <li class="main-menu-item">Карьера</li>
+                <li class="main-menu-item">Социальная отвественность</li>
+                <li class="main-menu-item">Контакты</li>
+              </ul>
+            </div>
+            <div class="main-menu-footer">
+              <h4>Деятельность</h4>
+              <ul>
+                <li class="main-menu-item">Доставка в Европу</li>
+                <li class="main-menu-item">Доставка из Европы</li>
+                <li class="main-menu-item">Денеженые переводы</li>
+                <li class="main-menu-item">Логистика ВЭД</li>
+              </ul>
+            </div>
+            <div class="footer_down-menu">
+              <div class="main-menu-footer">
+                <h4>Контакты</h4>
+                <ul>
+                  <li class="main-menu-item street">Офис в Москве</li>
+                  <li class="main-menu-item">
+                    ул. Набережная 12, д.67. офис 20123
+                  </li>
+                  <li class="main-menu-item street">Офис в Москве</li>
+                  <li class="main-menu-item">
+                    ул. Набережная 12, д.67. офис 20123
+                  </li>
+                </ul>
+              </div>
+
+              <div class="main-menu-footer">
+                <h4>ㅤ</h4>
+                <ul>
+                  <li class="main-menu-item street">+7 (812) 332-46-27</li>
+                  <li class="main-menu-item">Режим работыс 9:00 - 22:00</li>
+                  <li class="main-menu-item street">Социальные сети</li>
+                  <div class="footer__social">
+                    <a href="#">
+                      Whatsapp<img
+                        src="/assets/img/icon/whats.svg"
+                        alt="WhatsApp"
+                    /></a>
+                    <a href="#"
+                      >Telegram<img
+                        src="/assets/img/icon/th.svg"
+                        alt="Telegram"
+                    /></a>
+                    <a href="#"
+                      >VK<img src="/assets/img/icon/vk.svg" alt="VK"
+                    /></a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="down-footer-rhgt">
+          <p>@2023 LOGISTIC</p>
+          <p>Порядок обработки персольных данных</p>
+          <p>Пользовательское соглашение</p>
+        </div>
+      </div>
+    </footer> -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
