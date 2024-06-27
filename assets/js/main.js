@@ -199,3 +199,19 @@ document.querySelectorAll(".product-types__item").forEach((item) => {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var mySwiper = new Swiper('.swiper-container', {
+    // Опции Swiper
+    slidesPerView: 1.1,  // Количество слайдов, видимых одновременно
+    spaceBetween: 10,  // Расстояние между слайдами
+    // Добавьте другие опции по необходимости
+    navigation: {
+      nextEl: '.swiper-button-next',  // Кнопка "следующий слайд"
+      prevEl: '.swiper-button-prev',  // Кнопка "предыдущий слайд"
+    },
+  });
+});
+
+

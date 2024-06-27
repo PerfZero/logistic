@@ -1035,6 +1035,7 @@ button {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  
 }
 
 .business-plan__column {
@@ -2061,6 +2062,7 @@ footer {
   max-width: max-content;
 }
 
+
 .company-features__icon {
   background-color: #fff;
   margin-right: -32px;
@@ -2185,6 +2187,10 @@ footer {
   width: 318px;
   position: relative;
   font-family: "Inter", sans-serif;
+}
+
+.mb {
+  display: none;
 }
 
 .number_shema {
@@ -3313,6 +3319,72 @@ footer {
     font-size: 14px;
   }
 
+  .aside--block {
+    width: auto;
+  }
+
+  .aside--block h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .pk {
+    display: none;
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  .mb {
+    display: block;
+  }
+
+  .services_wrap {
+    padding: 10px;
+    height: 700px;
+  }
+
+  .services__advantage-description {
+    font-size: 12px;
+  }
+
+  .services__text {
+    flex: 1;
+  }
+
+  .services__title {
+    font-size: 23px;
+  }
+
+  .product-types__title {
+    font-size: 26px;
+    width: auto;
+    margin-bottom: 15px;
+    border-top: 1px solid #000;
+  }
+  .services {
+    margin-bottom: 28px;
+  }
+
+  .prod-mob img {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .services__advantage-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .services__advantage {
+    max-width: 562px;
+    padding: 16px;
+    gap: 14px;
+  }
+
   .main-tel__menu-mobile {
     padding-top: 3px;
     font-size: 18px;
@@ -3360,6 +3432,7 @@ footer {
   }
   .container .main-section {
     margin: 12px auto;
+    height: 660px;
   }
 
   .contain-wrap {
@@ -3368,6 +3441,7 @@ footer {
 
   .block--modifier {
     margin-top: 58px !important;
+    margin-bottom: 28px !important;
   }
 
   .block--modifier h2 {
@@ -3382,11 +3456,27 @@ footer {
     margin: 21px 0 12px 0;
   }
 
+  .prod-mob h3 {
+    font-size: 18px;
+  }
+
+  .img-scv {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .prod-mob-text-img {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
   .block__element-item {
     max-width: 400px;
     min-width: 270px;
     border: 1px solid #d4d4d469;
     padding: 10px;
+    border-radius: 10px;
   }
 
   .block__element {
@@ -3398,6 +3488,43 @@ footer {
   .maon__block-element {
     flex-direction: column;
     margin-top: 12px;
+    gap: 15px;
+  }
+
+  .business-plan__title {
+    font-size: 24px;
+  }
+
+  .business-plan__row {
+    background-image: url(/assets/img/airplane.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    height: 583px;
+    position: relative;
+  }
+  .business-plan__column > p {
+    font-size: 16px;
+  }
+
+  .business-plan__two-row{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .business-plan {
+    background-color: #f4f3f4;
+    margin-top: 28px;
+    padding-top: 28px;
+}
+  .business-plan__two-row-item{
+    margin: 0 10px;
+  }
+
+  .business-plan__two-row-item img {
+    margin-bottom: 30px;
   }
 
   .block__element {

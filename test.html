@@ -1,42 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Animated Input Border</title>
-<style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-
-  .animated-input {
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 18px;
-    padding: 10px;
-    width: 250px;
-    background-image: linear-gradient(to right, #000 0%, #000 100%);
-    background-position: 0 100%;
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s ease, background-position 0.3s ease;
-  }
-
-  .animated-input:focus {
-    background-size: 100% 2px;
-    background-position: 0 100%;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Example</title>
+    <!-- Подключение Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .block__element-item {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="block__element">
+                    <div class="block__element-item">
+                        <img src="/assets/img/5_1.svg" alt="" width="52" height="52">
+                        <h3>Работаем с любыми типами товаров</h3>
+                        <p>
+                            Поможем доставить продукты, оборудование, запчасти, автомобили и
+                            любые товары. Если потребуется — поможем получить необходимые
+                            лицензии
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="block__element">
+                    <div class="block__element-item">
+                        <img src="/assets/img/5_2.svg" alt="" width="52" height="52">
+                        <h3>Поможем найти товар и&nbsp;организуем доставку «под&nbsp;ключ»</h3>
+                        <p>
+                            Просчитаем маршрут, оформим все необходимые документы и доставим
+                            груз до вашего склада. Поможем выкупить груз и перевести деньги
+                            поставщику.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="block__element">
+                    <div class="block__element-item">
+                        <img src="/assets/img/5_3.svg" alt="" width="52" height="52">
+                        <h3>
+                            Без посредников. Есть «белая» компания в России и в Турции
+                        </h3>
+                        <p>
+                            В&nbsp;цепочке нет&nbsp;«лишних» посредников, ленивых Турков
+                            и&nbsp;«сомнительных» партнёров. Вы&nbsp;работаете с&nbsp;одой компанией,
+                            у&nbsp;которой есть&nbsp;«свой филиал» в&nbsp;Турции и&nbsp;головная компания
+                            в&nbsp;России.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="block__element">
+                    <div class="block__element-item">
+                        <img src="/assets/img/5_4.svg" alt="" width="52" height="52">
+                        <h3>Подберем оптимальные логистические маршруты</h3>
+                        <p>
+                            За&nbsp;более чем&nbsp;7&nbsp;лет, которые мы&nbsp;занимаемся экспортом и&nbsp;импортом
+                            товаров мы&nbsp;выработали лучшие логистические цепочки, а&nbsp;наши
+                            специалисты имеют колоссальный опыт.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Добавление кнопок навигации -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
-<input type="text" class="animated-input" placeholder="Введите текст">
-
+    <!-- Подключение Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,  // Количество слайдов, видимых одновременно
+                spaceBetween: 20,  // Расстояние между слайдами
+                navigation: {
+                    nextEl: '.swiper-button-next',  // Кнопка "следующий слайд"
+                    prevEl: '.swiper-button-prev',  // Кнопка "предыдущий слайд"
+                },
+            });
+        });
+    </script>
 </body>
 </html>
