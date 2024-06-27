@@ -3269,47 +3269,51 @@ footer {
     padding: 0 20px;
   }
 
-  .wrpa-menu_mobile{
+  .wrpa-menu_mobile {
     margin-top: 21px;
     padding: 0 10px;
     display: flex;
-    gap: 19px;
+    gap: 10px;
     flex-direction: column;
     margin-bottom: 32px;
   }
 
-  .mobile-menu .header__social{
-    padding:  0 10px ;
-    gap:  5px;
+  .mobile-menu .header__social {
+    padding: 0 10px;
+    gap: 5px;
     gap: 17px;
     justify-content: flex-start;
-
   }
 
-  .bnt_mobile{
+  .contact-mobile-menu {
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
+  }
+
+  .bnt_mobile {
     margin-top: 25px;
     max-width: 100%;
     padding: 0 10px;
   }
 
-  .bnt_mobile .button{
+  .bnt_mobile .button {
     width: auto;
   }
 
-  .bnt_mobile .button{
+  .bnt_mobile .button {
     font-size: 16px;
     color: #000;
   }
 
-  .bnt_mobile .button p{
+  .bnt_mobile .button p {
     flex: 1;
   }
 
-  .main-text__menu-mobile{
+  .main-text__menu-mobile {
     font-size: 14px;
   }
 
-  .main-tel__menu-mobile{
+  .main-tel__menu-mobile {
     padding-top: 3px;
     font-size: 18px;
     font-weight: 600;
@@ -3344,7 +3348,92 @@ footer {
     flex-wrap: wrap;
   }
   .button {
-    font-size: 3vw;
+    font-size: 10px;
+  }
+
+  .container h1 {
+    width: auto;
+  }
+
+  .main-section h1 {
+    font-size: 29px;
+  }
+  .container .main-section {
+    margin: 12px auto;
+  }
+
+  .contain-wrap {
+    height: 769px;
+  }
+
+  .block--modifier {
+    margin-top: 58px !important;
+  }
+
+  .block--modifier h2 {
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 13px;
+    max-width: fit-content;
+  }
+
+  .block__element-item h3 {
+    font-size: 22px;
+    margin: 21px 0 12px 0;
+  }
+
+  .block__element-item {
+    max-width: 400px;
+    min-width: 270px;
+    border: 1px solid #d4d4d469;
+    padding: 10px;
+  }
+
+  .block__element {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+  }
+
+  .maon__block-element {
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  .block__element {
+    flex-wrap: nowrap;
+  }
+
+  .container {
+    padding: 0 13px;
+  }
+
+  .adventeg__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adventeg__wrap {
+    padding-top: 9%;
+  }
+
+  .adventeg__item:first-child {
+    padding: 11px 0 11px 0;
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .adventeg__item:last-child {
+    padding: 11px 0 11px 0;
+  }
+
+  .adventeg__item {
+    border-left: none;
+    padding: 13px 0 11px 0;
+    font-size: 18px;
+    font-weight: 300;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
   }
 }
 
