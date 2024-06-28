@@ -9,6 +9,10 @@
   -ms-user-select: none;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   margin: 0;
   font-family: "Cygre", sans-serif;
