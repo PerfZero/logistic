@@ -2,6 +2,13 @@
   outline: 4px solid green !important;
 } */
 
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 body {
   margin: 0;
   font-family: "Cygre", sans-serif;
@@ -3416,6 +3423,11 @@ footer {
     text-decoration: none;
     font-size: 16px;
   }
+
+  .mobile-menu ul li :hover {
+opacity: 1;
+  }
+
 
   .show-menu {
     left: 0; /* показываем меню с левой стороны */
