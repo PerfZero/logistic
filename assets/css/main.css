@@ -1168,6 +1168,11 @@ button {
   transform: rotate(45deg);
 }
 
+.what-we-offer__image > img {
+  max-width: 540px;
+  height: auto;
+  width: auto;
+}
 .completed-projects__overlay {
   align-content: flex-end;
   background-color: #fff;
@@ -1714,6 +1719,12 @@ footer {
   border-top: 1px solid #d4d4d469;
   padding: 10px 0;
 }
+
+.company-features__item img {
+  max-width: 888px;
+  height: auto;
+  width: 100%;
+}
 .what-we-offer__image {
   display: flex;
   flex-direction: column;
@@ -1737,7 +1748,7 @@ footer {
 }
 
 .what-we-offer__item-title {
-  font-size: 32px;
+  font-size: clamp(1.375rem, 0.926vw + 1.167rem, 2rem);
   font-weight: 700;
   line-height: 105%;
 }
@@ -2023,7 +2034,7 @@ footer {
   padding: 24px;
   margin: 24px 24px 24px 0;
   border-radius: 10px;
-  height: 373px;
+  height: clamp(20.438rem, 4.259vw + 19.479rem, 23.313rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2052,7 +2063,7 @@ footer {
 
 .company-features__title-item {
   font-weight: 700;
-  font-size: 48px;
+  font-size: clamp(1.375rem, 2.407vw + 0.833rem, 3rem);
   line-height: 105%;
   color: #080518;
   margin-top: 48px;
@@ -2097,7 +2108,7 @@ footer {
 
 .company-features__subtitle {
   font-weight: 400;
-  font-size: 18px;
+  font-size: clamp(1rem, 0.185vw + 0.958rem, 1.125rem);
   line-height: 140%;
   color: #080518;
   font-family: "Inter", sans-serif;
@@ -2105,7 +2116,7 @@ footer {
 
 .company-features__text {
   font-weight: 400;
-  font-size: 18px;
+  font-size: clamp(1rem, 0.185vw + 0.958rem, 1.125rem);
   line-height: 140%;
   color: #080518;
   font-family: "Inter", sans-serif;
@@ -3688,6 +3699,19 @@ footer {
     overflow: hidden;
   }
 
+  .service-1-main {
+    margin: 0 !important;
+    height: 310px !important;
+  }
+
+  .service-1-main h1 {
+    margin-top: 350px;
+  }
+
+  .what-we-offer .container {
+    margin-top: 150px;
+  }
+
   .info-box {
     display: none;
   }
@@ -3696,7 +3720,81 @@ footer {
   }
   .column-one {
     width: auto;
+  }
+
+  .service-1-wrap {
+    height: 550px;
+  }
+
+  .what-we-offer__content {
+    flex-direction: column-reverse;
+    padding: 10px;
+    gap: 25px;
+  }
+
+  .what-we-offer__text {
+    padding: 0;
+    border-left: none;
+  }
+
+  .what-we-offer__image {
+    width: auto;
+    border-top: 1px solid;
+  }
+
+  .what-we-offer .container {
+    margin-top: 120px;
+    border-top: none;
+  }
+
+  .what-we-offer__text .button {
+    margin: 0 auto;
+  }
+
+  .what-we-offer__content img {
+    width: 100%;
+  }
+
+  .title_mian {
+    margin-bottom: 15px;
+  }
+
+  .feature-row {
+    flex-direction: column;
+  }
+
+  .company-features__item-dol {
+    width: auto;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .company-features__title-item {
+    margin-top: 24px;
 }
+
+.company-features__item .button{
+  margin: 0 auto;
+}
+
+  .company-features__item {
+    padding: 15px 0 0 0;
+    border-left: none;
+}
+
+  .company-features__icons {
+    justify-content: space-between;
+  }
+
+  .feature-row {
+    margin-top: 24px;
+    border-top: none;
+  }
+
+  .company-features__icon {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 @media (max-width: 500px) {
