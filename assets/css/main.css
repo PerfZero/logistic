@@ -1,3 +1,7 @@
+/* *{
+  outline: 4px solid green !important;
+} */
+
 body {
   margin: 0;
   font-family: "Cygre", sans-serif;
@@ -746,7 +750,7 @@ button {
   padding-bottom: 7px;
   max-width: fit-content;
   border-bottom: 2px solid #ffd028;
-  font-size: 25px;
+  font-size: clamp(1.25rem, 0.463vw + 1.146rem, 1.563rem);
   font-weight: 700;
   padding-top: 24px;
 }
@@ -1779,7 +1783,7 @@ footer {
 
 .company-title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: clamp(1.5rem, 2.222vw + 1rem, 3rem);
   line-height: 105%;
   border-top: 1px solid;
   padding-top: 32px;
@@ -2125,7 +2129,6 @@ footer {
 
 .page-servic-1 .business-plan__two-row-item {
   max-width: 350px;
-  height: 200px;
 }
 
 .page-servic-1 .business-plan__two-row {
@@ -2172,7 +2175,7 @@ footer {
 
 .shema-title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: clamp(1.5rem, 2.222vw + 1rem, 3rem);
   line-height: 105%;
   width: 100%;
   padding-top: 24px;
@@ -3373,6 +3376,25 @@ footer {
     font-size: 12px;
   }
 
+  .business-plan__column .mb {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .revers {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto !important;
+    padding: 10px;
+    height: 180px;
+    margin-left: 10px;
+  }
+
+  .revers .services__text {
+    width: auto;
+    padding: 0;
+  }
+
   .services__text {
     flex: 1;
   }
@@ -3418,7 +3440,7 @@ footer {
     border-top: none;
   }
   .main-menu-footer {
-    min-width: 200px;
+    min-width: 205px;
   }
 
   .column-two > div:nth-child(2) {
@@ -3527,7 +3549,6 @@ footer {
   }
 
   .business-plan__row {
-    background-image: url(/assets/img/airplane.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
@@ -3771,19 +3792,23 @@ footer {
 
   .company-features__title-item {
     margin-top: 24px;
-}
+  }
 
-.company-features__item .button{
-  margin: 0 auto;
-}
+  .company-features__item .button {
+    margin: 0 auto;
+  }
 
   .company-features__item {
     padding: 15px 0 0 0;
     border-left: none;
-}
+  }
 
   .company-features__icons {
     justify-content: space-between;
+  }
+
+  .cargo-cost-calculation__form .button {
+    margin: 0 auto;
   }
 
   .feature-row {
@@ -3795,8 +3820,172 @@ footer {
     height: 60px;
     width: 60px;
   }
-}
 
+  .project-main-wp {
+    flex-wrap: nowrap;
+  }
+
+  .completed-projects__column {
+    width: auto;
+  }
+
+  .completed-projects__card {
+    border-radius: 10px;
+  }
+
+  .shema_main {
+    padding: 18px;
+  }
+
+  .shema_road {
+    margin-top: 15px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: auto;
+    margin-left: 15px;
+    height: auto;
+  }
+
+  #finish::after {
+    content: "";
+    border-left: 3px solid #fff;
+    display: block;
+    width: 94px;
+    height: 534px;
+    position: absolute;
+    top: -520px;
+    left: -17px;
+  }
+
+  #target::after {
+    content: url(/assets/img/icon/deliver.svg);
+    display: none;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: -46px;
+    right: 3px;
+  }
+
+  .number_shema::before {
+    top: 5px;
+    left: -27px;
+    z-index: 2;
+  }
+
+  .section-delivery .container {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .section-delivery {
+    margin-bottom: 28px;
+  }
+
+  .shema_wrap {
+    height: 750px;
+  }
+  .shema {
+    margin-bottom: 28px;
+  }
+  .down {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .number_text:first-child {
+    padding: 0;
+    width: auto;
+  }
+
+  .number_title {
+    font-size: 16px;
+  }
+
+  .number_text {
+    padding: 0;
+    width: auto;
+  }
+
+  .file-upload {
+    flex-wrap: nowrap;
+  }
+
+  .upload-file_text {
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+
+  .upload-file_text::after {
+    align-content: center;
+    content: url(/assets/img/icon/attach.svg);
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: none;
+    text-align: center;
+  }
+
+  .file-upload .button {
+    margin: 0;
+  }
+
+  .service-2-main {
+    margin: 0 !important;
+    height: 320px !important;
+  }
+
+  .service-2-main h1 {
+    margin-top: 285px;
+  }
+
+  .service-item-text {
+    font-size: 14px;
+  }
+
+  .service-wrap {
+    padding: 0 !important;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .company-info {
+    margin-top: 28px;
+    padding: 10px;
+  }
+
+  .service-column {
+    padding: 10px;
+    width: auto;
+  }
+
+  .company-wrapper {
+    padding: 10px;
+  }
+
+  .services_wrap_page {
+    flex-wrap: wrap;
+  }
+
+  .business-plan__two-row-item {
+    padding: 10px;
+  }
+
+  .fast_car {
+    position: relative;
+    height: 410px;
+  }
+
+  .fast_car > .services__advantages {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .contacts_page__item {
     width: 100% !important;

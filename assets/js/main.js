@@ -203,8 +203,7 @@ document.querySelectorAll(".product-types__item").forEach((item) => {
 
 document.addEventListener('DOMContentLoaded', function () {
   var mySwiper = new Swiper('.swiper-container', {
-    // Опции Swiper
-    slidesPerView: 1.1,  // Количество слайдов, видимых одновременно
+   slidesPerView: 1.1,  // Количество слайдов, видимых одновременно
     spaceBetween: 10,  // Расстояние между слайдами
     // Добавьте другие опции по необходимости
     navigation: {
@@ -217,54 +216,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-const map = document.getElementById('map');
-let isDragging = false;
-let startX, startY, initialX, initialY;
-
-map.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startX = e.clientX;
-  startY = e.clientY;
-  initialX = map.offsetLeft;
-  initialY = map.offsetTop;
-  map.style.cursor = 'grabbing';
-});
-
-map.addEventListener('mouseup', () => {
-  isDragging = false;
-  map.style.cursor = 'grab';
-});
-
-map.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startX;
-    const dy = e.clientY - startY;
-    map.style.left = `${initialX + dx}px`;
-    map.style.top = `${initialY + dy}px`;
-  }
-});
-
-map.addEventListener('touchstart', (e) => {
-  isDragging = true;
-  const touch = e.touches[0];
-  startX = touch.clientX;
-  startY = touch.clientY;
-  initialX = map.offsetLeft;
-  initialY = map.offsetTop;
-  map.style.cursor = 'grabbing';
-});
-
-map.addEventListener('touchend', () => {
-  isDragging = false;
-  map.style.cursor = 'grab';
-});
-
-map.addEventListener('touchmove', (e) => {
-  if (isDragging) {
-    const touch = e.touches[0];
-    const dx = touch.clientX - startX;
-    const dy = touch.clientY - startY;
-    map.style.left = `${initialX + dx}px`;
-    map.style.top = `${initialY + dy}px`;
-  }
-});
