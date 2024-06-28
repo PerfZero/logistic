@@ -312,8 +312,12 @@
             Импорт и экспорт товаров <br />и оборудования из европы <br />в
             россию и обратно под ключ
           </h1>
-          <div class="button">
+          <div class="button pk">
             <p>Запросить коммерческое предложение</p>
+            <a href="#" class="btn"></a>
+          </div>
+          <div class="button mb">
+            <p>Запросить КП</p>
             <a href="#" class="btn"></a>
           </div>
           <div class="adventeg__wrap">
@@ -881,14 +885,14 @@
         </div>
       </section>
 
-      <!--  <section class="completed-projects">
+     <section class="completed-projects">
         <div class="container">
           <div class="line_main-block">
           <h2 class="completed-projects__title title_mian">
             Выполненные проекты
           </h2>
           </div>
-          <div class="completed-projects__row">
+          <div class="completed-projects__row pk">
             <div class="completed-projects__column">
               <div class="completed-projects__card">
                 <img src="/assets/img/siems.png" alt="" />
@@ -920,13 +924,50 @@
               </div>
             </div>
           </div>
+          <div class="completed-projects__row mb">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide completed-projects__column">
+                      <div class="completed-projects__card">
+                          <img src="/assets/img/siems.png" alt="" />
+                          <div class="completed-projects__overlay">
+                              <div class="completed-projects__overlay-text">
+                                  <h3 class="completed-projects__name">Cтанки для обработки металла siemens</h3>
+                                  <div class="completed-projects__name-list">
+                                  <p class="completed-projects__details">Сумма: €120 000</p>
+                                  <p class="completed-projects__details">Сроки: 9 недель</p>
+                                </div>
+                              </div>
+                              <button class="services_bth pk"></button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide completed-projects__column">
+                      <div class="completed-projects__card">
+                          <img src="/assets/img/depo.png" alt="" />
+                          <div class="completed-projects__overlay">
+                              <div class="completed-projects__overlay-text">
+                                  <h3 class="completed-projects__name">Перевозка компрессорной установки</h3>
+                                  <div class="completed-projects__name-list">
+                                  <p class="completed-projects__details">Сумма: €150 000</p>
+                                  <p class="completed-projects__details">Сроки: 12 недель</p>
+                                </div>
+                              </div>
+                              <button class="services_bth pk"></button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Добавьте другие проекты как новые swiper-slide -->
+              </div>
+          </div>
+          </div>
           <div class="button">
             <p>Все проекты</p>
             <a href="#" class="btn"></a>
           </div>
         </div>
       </section>
-
+ 
       <section class="cargo-cost-calculation">
         <div class="container">
           <div class="section-delivery__title_main">
@@ -1093,11 +1134,14 @@
 
       <section class="services">
         <div class="container">
-          <div class="services_wrap help_serviec">
+
+          
+          <div class="services_wrap help_serviec ">
             <h2 class="services__title help_serviec-title">
               Мы предлагаем полный комплекс услуг
             </h2>
-            <div class="services__advantages">
+
+            <div class="services__advantages pk">
               <div class="services__advantage">
                 <div class="services__text complex">
                   <img
@@ -1142,7 +1186,52 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div>\
+            <div class="swiper-container services__advantages mobile-adv mb">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="services__advantage mobile-advs">
+                          <div class="services__text complex">
+                              <img src="/assets/img/icon/world.svg" width="52" height="52" />
+                              <p class="services__advantage-description">
+                                  Экспорт и импорт товаров из любой точки мира.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="services__advantage mobile-advs">
+                          <div class="services__text complex">
+                              <img src="/assets/img/icon/document.svg" width="52" height="52" />
+                              <p class="services__advantage-description">
+                                  Комплексные услуги по логистике и ВЭД.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="services__advantage mobile-advs">
+                          <div class="services__text complex">
+                              <img src="/assets/img/icon/pay.svg" width="52" height="52" />
+                              <p class="services__advantage-description">
+                                  Совершение платежей в любой банк мира.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="services__advantage mobile-advs">
+                          <div class="services__text complex">
+                              <img src="/assets/img/icon/company.svg" width="52" height="52" />
+                              <p class="services__advantage-description">
+                                  Поможем открыть компанию в Турции или ЕС.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+          </div>
           </div>
         </div>
       </section>
@@ -1152,30 +1241,30 @@
           <hr />
           <h2 class="title_mian">География объектов</h2>
           <div class="map-container">
-            <div id="map" class="map">
+            <div  class="map">
               <div
                 class="marker"
-                style="top: 47%; left: 39%"
+                style="top: 305px; left: 523px"
                 onclick="showInfo('object1')"
               ></div>
               <div
                 class="marker"
-                style="top: 30%; left: 30%"
+                style="top: 194px; left:400px"
                 onclick="showInfo('object2')"
               ></div>
               <div
                 class="marker"
-                style="top: 32%; left: 57.3%"
+                style="top: 213px; left: 768px"
                 onclick="showInfo('object3')"
               ></div>
               <div
                 class="marker"
-                style="top: 73%; left: 3%"
+                style="top: 474px; left: 41px"
                 onclick="showInfo('object4')"
               ></div>
               <div
                 class="marker"
-                style="top: 33%; left: 10.4%"
+                style="top: 218px; left: 139px"
                 onclick="showInfo('object5')"
               ></div>
               <div id="info-box" class="info-box">
@@ -1273,7 +1362,7 @@
           <p>Пользовательское соглашение</p>
         </div>
       </div>
-    </footer>  -->
+    </footer>  
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>  
   </body>

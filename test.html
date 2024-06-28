@@ -1,104 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiper Example</title>
-    <!-- Подключение Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <style>
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .block__element-item {
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интерактивная карта</title>
+  <style>
+    .geography {
+      position: relative;
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden; /* предотвращает выход карты за пределы контейнера */
+    }
+
+    .map {
+      position: absolute;
+      width: 1000px; /* Ширина карты, может быть другой */
+      height: 1000px; /* Высота карты, может быть другой */
+      cursor: grab; /* Меняем курсор на руку */
+    }
+
+    .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .info-box {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="block__element">
-                    <div class="block__element-item">
-                        <img src="/assets/img/5_1.svg" alt="" width="52" height="52">
-                        <h3>Работаем с любыми типами товаров</h3>
-                        <p>
-                            Поможем доставить продукты, оборудование, запчасти, автомобили и
-                            любые товары. Если потребуется — поможем получить необходимые
-                            лицензии
-                        </p>
-                    </div>
+    <section class="geography">
+        <div class="container">
+          <hr />
+          <h2 class="title_mian">География объектов</h2>
+          <div class="map-container">
+            <div id="map" class="map">
+              <div
+                class="marker"
+                style="top: 305px; left: 523px"
+                onclick="showInfo('object1')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 194px; left:400px"
+                onclick="showInfo('object2')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 213px; left: 768px"
+                onclick="showInfo('object3')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 474px; left: 41px"
+                onclick="showInfo('object4')"
+              ></div>
+              <div
+                class="marker"
+                style="top: 218px; left: 139px"
+                onclick="showInfo('object5')"
+              ></div>
+              <div id="info-box" class="info-box">
+                <p id="info-param">Поставка «под ключ»</p>
+                <h3 id="info-title">Название объекта</h3>
+                <p id="info-description">
+                  Описание объекта будет отображаться здесь.
+                </p>
+                <div class="button">
+                  <p>Подробнее</p>
+                  <a href="#" class="btn"></a>
                 </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-                <div class="block__element">
-                    <div class="block__element-item">
-                        <img src="/assets/img/5_2.svg" alt="" width="52" height="52">
-                        <h3>Поможем найти товар и&nbsp;организуем доставку «под&nbsp;ключ»</h3>
-                        <p>
-                            Просчитаем маршрут, оформим все необходимые документы и доставим
-                            груз до вашего склада. Поможем выкупить груз и перевести деньги
-                            поставщику.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="block__element">
-                    <div class="block__element-item">
-                        <img src="/assets/img/5_3.svg" alt="" width="52" height="52">
-                        <h3>
-                            Без посредников. Есть «белая» компания в России и в Турции
-                        </h3>
-                        <p>
-                            В&nbsp;цепочке нет&nbsp;«лишних» посредников, ленивых Турков
-                            и&nbsp;«сомнительных» партнёров. Вы&nbsp;работаете с&nbsp;одой компанией,
-                            у&nbsp;которой есть&nbsp;«свой филиал» в&nbsp;Турции и&nbsp;головная компания
-                            в&nbsp;России.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="block__element">
-                    <div class="block__element-item">
-                        <img src="/assets/img/5_4.svg" alt="" width="52" height="52">
-                        <h3>Подберем оптимальные логистические маршруты</h3>
-                        <p>
-                            За&nbsp;более чем&nbsp;7&nbsp;лет, которые мы&nbsp;занимаемся экспортом и&nbsp;импортом
-                            товаров мы&nbsp;выработали лучшие логистические цепочки, а&nbsp;наши
-                            специалисты имеют колоссальный опыт.
-                        </p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- Добавление кнопок навигации -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
+      </section> 
+  <script>
+    const map = document.getElementById('map');
+    let isDragging = false;
+    let startX, startY, initialX, initialY;
 
-    <!-- Подключение Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var mySwiper = new Swiper('.swiper-container', {
-                slidesPerView: 1,  // Количество слайдов, видимых одновременно
-                spaceBetween: 20,  // Расстояние между слайдами
-                navigation: {
-                    nextEl: '.swiper-button-next',  // Кнопка "следующий слайд"
-                    prevEl: '.swiper-button-prev',  // Кнопка "предыдущий слайд"
-                },
-            });
-        });
-    </script>
+    map.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+      startY = e.clientY;
+      initialX = map.offsetLeft;
+      initialY = map.offsetTop;
+      map.style.cursor = 'grabbing';
+    });
+
+    map.addEventListener('mouseup', () => {
+      isDragging = false;
+      map.style.cursor = 'grab';
+    });
+
+    map.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+        map.style.left = `${initialX + dx}px`;
+        map.style.top = `${initialY + dy}px`;
+      }
+    });
+
+    map.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      const touch = e.touches[0];
+      startX = touch.clientX;
+      startY = touch.clientY;
+      initialX = map.offsetLeft;
+      initialY = map.offsetTop;
+      map.style.cursor = 'grabbing';
+    });
+
+    map.addEventListener('touchend', () => {
+      isDragging = false;
+      map.style.cursor = 'grab';
+    });
+
+    map.addEventListener('touchmove', (e) => {
+      if (isDragging) {
+        const touch = e.touches[0];
+        const dx = touch.clientX - startX;
+        const dy = touch.clientY - startY;
+        map.style.left = `${initialX + dx}px`;
+        map.style.top = `${initialY + dy}px`;
+      }
+    });
+  </script>
 </body>
 </html>

@@ -1035,7 +1035,6 @@ button {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .business-plan__column {
@@ -1419,7 +1418,7 @@ fieldset:nth-child(2) .cargo-cost-calculation__legend::after {
   background-color: #fff;
   border-radius: 12px;
   padding: 15px 12px;
-  margin: 12px 0;
+  margin: 6px 0;
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: row;
@@ -1448,11 +1447,12 @@ fieldset:nth-child(2) .cargo-cost-calculation__legend::after {
   background-image: url(/assets/img/map.png);
   background-size: cover;
   border-radius: 8px;
+  cursor: grab; /* Меняем курсор на руку */
 }
 
 .marker {
   position: absolute;
-  width: 10%;
+  width: 55px;
   height: 10%;
   background-repeat: no-repeat;
   background-image: url(/assets/img/icon/dot.svg);
@@ -1472,7 +1472,7 @@ fieldset:nth-child(2) .cargo-cost-calculation__legend::after {
   background-color: white;
   padding: 24px;
   border-radius: 8px;
-  max-width: 380px;
+  max-width: clamp(13.625rem, 101.25vw - 67.375rem, 23.75rem);
   height: 552px;
   display: flex;
   flex-direction: column;
@@ -1515,6 +1515,7 @@ fieldset:nth-child(2) .cargo-cost-calculation__legend::after {
 
 .geography {
   margin-bottom: 132px;
+  position: relative;
 }
 
 .column-one img {
@@ -2062,7 +2063,6 @@ footer {
   max-width: max-content;
 }
 
-
 .company-features__icon {
   background-color: #fff;
   margin-right: -32px;
@@ -2132,6 +2132,10 @@ footer {
   line-height: 140%;
   color: #080518;
   font-family: "Inter", sans-serif;
+}
+
+.image-cargo__block img {
+  width: 100%;
 }
 
 .page-servic-1 .business-plan__two-row-item h2 {
@@ -2367,6 +2371,11 @@ footer {
   line-height: 140%;
   font-family: "Inter", sans-serif;
   flex: 1;
+}
+
+.completed-projects .button {
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
 .cyrle-we {
@@ -3014,6 +3023,10 @@ footer {
   .header .logo {
     padding: 27px 12px;
   }
+
+  .map-container {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3380,9 +3393,9 @@ footer {
   }
 
   .services__advantage {
-    max-width: 562px;
     padding: 16px;
     gap: 14px;
+    width: 100%;
   }
 
   .main-tel__menu-mobile {
@@ -3420,7 +3433,13 @@ footer {
     flex-wrap: wrap;
   }
   .button {
-    font-size: 10px;
+    font-size: 16px;
+  }
+
+  .main-tet > .mb {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
   }
 
   .container h1 {
@@ -3469,6 +3488,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .block__element-item {
@@ -3507,9 +3527,9 @@ footer {
     font-size: 16px;
   }
 
-  .business-plan__two-row{
+  .business-plan__two-row {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     width: 100%;
   }
@@ -3518,8 +3538,8 @@ footer {
     background-color: #f4f3f4;
     margin-top: 28px;
     padding-top: 28px;
-}
-  .business-plan__two-row-item{
+  }
+  .business-plan__two-row-item {
     margin: 0 10px;
   }
 
@@ -3562,6 +3582,121 @@ footer {
     font-weight: 600;
     border-bottom: 1px solid #fff;
   }
+
+  .completed-projects__details {
+    padding: 6px 5px;
+    font-size: 12px;
+  }
+
+  .completed-projects__name {
+    font-size: 18px;
+  }
+
+  .completed-projects__name-list {
+    display: flex;
+  }
+
+  .completed-projects__overlay {
+    padding: 12px;
+    margin: 12px;
+    width: 100%;
+  }
+
+  .completed-projects__overlay-text {
+    width: 100%;
+  }
+
+  .completed-projects__card {
+    height: 380px;
+  }
+
+  .completed-projects {
+    padding: 28px 0;
+    margin-bottom: 28px;
+  }
+
+  .cargo-cost-calculation__fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .cargo-cost-calculation__legend {
+    font-size: 24px;
+  }
+
+  fieldset:first-child .cargo-cost-calculation__legend::after {
+    top: 17px;
+  }
+
+  fieldset:nth-child(2) .cargo-cost-calculation__legend::after {
+    top: 17px;
+  }
+
+  .cargo-cost-calculation__label_main {
+    gap: 20px;
+  }
+
+  .info-block__column-one {
+    padding: 10px;
+    width: 100%;
+    height: 667px;
+  }
+
+  .info-block__column-one h2 {
+    font-size: 24px;
+  }
+
+  .info-block__row {
+    flex-wrap: wrap;
+  }
+
+  .info-block__column-two {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .image-cargo__block-title {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .mobile-adv {
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+  }
+
+  .help_serviec {
+    position: relative;
+  }
+
+  .mobile-advs {
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .cargo-cost-calculation {
+    margin-bottom: 58px;
+  }
+
+  .info-block {
+    margin-bottom: 28px;
+  }
+
+  .map-container {
+    overflow: hidden;
+  }
+
+  .info-box {
+    display: none;
+  }
+  .geography {
+    margin-bottom: 32px;
+  }
+  .column-one {
+    width: auto;
+}
 }
 
 @media (max-width: 500px) {
