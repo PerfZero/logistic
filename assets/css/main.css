@@ -19,6 +19,9 @@ body {
   box-sizing: border-box;
 }
 
+
+
+
 a {
   color: #fff;
   text-decoration: none;
@@ -51,6 +54,15 @@ h5 {
   border-bottom: 1px solid #d4d4d469;
   transition: background-color 0.3s ease;
   z-index: 9999;
+}
+
+.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazyloaded {
+  opacity: 1;
 }
 
 .header-active {
