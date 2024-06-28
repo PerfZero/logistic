@@ -216,3 +216,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  var body = document.body;
+  body.classList.toggle('no-scroll'); // Toggle the 'no-scroll' class on body
+
+  // Toggle the active class on the menu toggle button
+  this.classList.toggle('active');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const selectTriggers = document.querySelectorAll('.custom-select__trigger');
+
+  selectTriggers.forEach(trigger => {
+    trigger.addEventListener('click', function() {
+      const select = this.parentElement;
+      select.classList.toggle('open');
+    });
+  });
+
+  const customOptions = document.querySelectorAll('.custom-option');
+
+  customOptions.forEach(option => {
+    option.addEventListener('click', function() {
+      const select = this.closest('.custom-select');
+      const trigger = select.querySelector('.custom-select__trigger span');
+      trigger.textContent = this.textContent;
+      select.classList.remove('open');
+      select.querySelector('.custom-option.selected')?.classList.remove('selected');
+      this.classList.add('selected');
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    const isClickInside = e.target.closest('.custom-select');
+    if (!isClickInside) {
+      document.querySelectorAll('.custom-select.open').forEach(select => {
+        select.classList.remove('open');
+      });
+    }
+  });
+});

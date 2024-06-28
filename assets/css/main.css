@@ -438,7 +438,9 @@ input {
   align-content: center;
   width: 40px;
   height: 40px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 }
 
@@ -591,6 +593,66 @@ input {
   align-items: center;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-select__trigger {
+  opacity: 0.7;
+  font-family: 'Inter';
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 18px 0;
+  font-size: 18px;
+  height: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-options {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ffd028;
+
+}
+
+.custom-option {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-option:hover {
+  background: #f2f2f2;
+}
+
+.custom-select.open .custom-options {
+  display: flex;
+  z-index: 9;
+}
+
+
+
 .button {
   font-size: 1vw;
 
@@ -611,7 +673,7 @@ input {
   background-color: #fff;
   height: 40px;
   width: 40px;
-  z-index: 999;
+  z-index: 998;
   border-radius: 175px;
   display: flex;
   justify-content: center;
@@ -1288,6 +1350,7 @@ fieldset:nth-child(2) .cargo-cost-calculation__legend::after {
 .cargo-cost-calculation__row {
   display: block;
   flex-direction: column;
+  width: 100%;
   width: -webkit-fill-available;
 }
 
@@ -1751,10 +1814,11 @@ footer {
   border-top: 1px solid;
 }
 
-.compited-image__class img{
+.compited-image__class img {
   width: 100%;
   max-width: 612px;
   height: 100%;
+  max-width: 100%;
 }
 
 .what-we-offer__item-title {
@@ -1814,6 +1878,9 @@ footer {
   line-height: 140%;
 }
 
+
+
+
 .service-column {
   background-color: #fff;
   padding: 24px;
@@ -1839,6 +1906,9 @@ footer {
   font-weight: 900;
   margin-right: 15px;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-item {
@@ -2094,6 +2164,9 @@ footer {
   width: 80px;
   z-index: 1;
   border: 3px solid #f4f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .company-features__title {
@@ -2124,21 +2197,21 @@ footer {
   font-family: "Inter", sans-serif;
 }
 
-.page-servis-3{
-    padding-bottom: 0 !important;
+.page-servis-3 {
+  padding-bottom: 0 !important;
 }
 
-.fix-p{
+.fix-p {
   padding: 0;
   padding-bottom: 128px;
   margin-bottom: 128px !important ;
 }
 
-.fix-r{
+.fix-r {
   margin-bottom: 128px !important ;
 }
 
-.serv-page-3{
+.serv-page-3 {
   padding-bottom: 50px;
 }
 
@@ -2343,6 +2416,9 @@ footer {
   border-radius: 50%;
   background-color: #f4f3f4;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-2-main h1 {
@@ -2397,6 +2473,9 @@ footer {
   line-height: 105%;
   flex: 1;
   font-family: "Cygre", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrap_shema-text {
@@ -2428,6 +2507,9 @@ footer {
   line-height: 105%;
   text-align: center;
   margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrap_shema-text {
@@ -2603,6 +2685,10 @@ footer {
 .sers_4 {
 }
 
+.white-c {
+  color: #fff !important;
+}
+
 .black {
   color: #080518 !important;
 }
@@ -2707,7 +2793,7 @@ footer {
 
 .about-title {
   font-weight: 700;
-  font-size: 60px;
+  font-size: clamp(2rem, 2.593vw + 1.417rem, 3.75rem);
   line-height: 105%;
   padding-bottom: 36px;
 }
@@ -2723,7 +2809,7 @@ footer {
   max-width: 49%;
   padding: 30px 0 0 24px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: clamp(1.25rem, 1.111vw + 1rem, 2rem);
   line-height: 105%;
   border-left: 1px solid;
 }
@@ -2750,7 +2836,7 @@ footer {
 
 .year-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: clamp(1.25rem, 1.852vw + 0.833rem, 2.5rem);
   line-height: 105%;
   margin-bottom: 7px;
 }
@@ -2784,6 +2870,9 @@ footer {
   font-size: 21px;
   line-height: 105%;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .years-ago {
@@ -2824,6 +2913,7 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .features_work-item {
@@ -2835,6 +2925,7 @@ footer {
   height: 304px;
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .features_work-s {
@@ -2878,11 +2969,12 @@ footer {
 
 .number_full {
   flex: 1;
+  margin-bottom: 15px;
 }
 
 .principle-title_mian {
   font-weight: 700;
-  font-size: 48px;
+  font-size: clamp(1.625rem, 2.037vw + 1.167rem, 3rem);
   line-height: 105%;
   padding-top: 24px;
   margin-bottom: 48px;
@@ -2900,12 +2992,12 @@ footer {
   border-radius: 8px;
   padding: 24px;
   max-width: 562px;
-  height: 300px;
+  height: auto;
 }
 
 .principle-text {
   font-weight: 700;
-  font-size: 32px;
+  font-size: clamp(1.125rem, 1.296vw + 0.833rem, 2rem);
   line-height: 105%;
   margin-bottom: 16px;
 }
@@ -2928,6 +3020,9 @@ footer {
   font-weight: 700;
   font-size: 21px;
   line-height: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts_page {
@@ -3018,7 +3113,6 @@ footer {
   width: 100% !important;
 }
 
-
 .expalme_img img {
   width: 100%;
   max-width: 100%;
@@ -3027,7 +3121,7 @@ footer {
 
 .expalme__text {
   max-width: 888px;
-    margin: 0 auto;
+  margin: 0 auto;
   font-size: 18px;
   font-family: "Inter", sans-serif;
   margin-top: 80px;
@@ -3197,6 +3291,7 @@ footer {
     flex-direction: column;
     z-index: 999; /* ниже кнопки, чтобы не перекрывать */
     transition: all 0.5s ease; /* добавляем плавную анимацию */
+    
   }
 
   /* CSS для поворота */
@@ -4093,11 +4188,11 @@ footer {
     margin-bottom: 15px;
   }
 
-  .rev-block{
+  .rev-block {
     flex-direction: column-reverse;
   }
 
-  .ser_4 .mb{
+  .ser_4 .mb {
     display: flex;
   }
   .ser_4 {
@@ -4105,49 +4200,102 @@ footer {
     width: auto;
   }
 
- .compited-card {
+  .compited-card {
     padding: 10px;
+  }
+  .compited__main-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 105%;
+    margin: 24px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    border-radius: 8px;
+    width: 75%;
+  }
 
-}
-.compited__main-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  color: #000;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 105%;
-  margin: 24px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  padding-left: 24px;
-  border-radius: 8px;
-  width: 75%;
-}
+  .fip {
+    margin-bottom: 0;
+  }
 
-.fip{
-  margin-bottom: 0;
-}
-
-.compited-card .mb{
-  display: flex;
-}
+  .compited-card .mb {
+    display: flex;
+  }
 
   .compited-column {
     flex-direction: column;
-}
+  }
 
-.contacts_page_wrapper .mb{
-  display: flex;
-}
+  .contacts_page_wrapper .mb {
+    display: flex;
+  }
 
-.contacts_page_wrapper {
-  padding: 10px;
-  height: 475px;
+  .contacts_page_wrapper {
+    padding: 10px;
+    height: 475px;
+  }
 
-}
+  .company_content {
+    border-top: none;
+    flex-direction: column-reverse;
+  }
+
+  .company_content__text {
+    max-width: 100%;
+    padding: 0;
+    font-size: clamp(1.25rem, 1.111vw + 1rem, 2rem);
+    border-left: none;
+  }
+
+  .company_content__text .button {
+    display: none;
+  }
+
+  .years__wrapper {
+    padding: 10px;
+    height: auto;
+  }
+
+  .years__list .years__item {
+    border-right: none;
+    max-width: 100%;
+  }
+
+  .years-param {
+    margin-bottom: 24px;
+  }
+
+  .company {
+    margin-bottom: 28px;
+  }
+
+  .years__list {
+    max-width: 100%;
+    border-top: none;
+  }
+
+  .years__list .years__item:last-child {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .years__block-text {
+    background-color: #fff;
+    padding: 10px;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .principle_wrap {
+    padding: 10px;
+  }
 }
 @media (max-width: 500px) {
   .contacts_page__item {

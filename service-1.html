@@ -834,7 +834,7 @@
         </div>
       </section>
 
-            <section class="cargo-cost-calculation">
+      <section class="cargo-cost-calculation">
         <div class="container">
           <div class="section-delivery__title_main">
             <h2 class="section-delivery__title title_mian">Расчет стоимости</h2>
@@ -845,40 +845,34 @@
                 Данные о грузе
               </legend>
               <div class="cargo-cost-calculation__row">
-                <label class="cargo-cost-calculation__label" for="country"
-                  >Страна забора:</label
-                >
-                <select
-                  class="cargo-cost-calculation__input animated-input"
-                  id="country"
-                  name="country"
-                >
-                  <option value="">Выберите страну</option>
-                </select>
+                <label class="cargo-cost-calculation__label" for="country">Страна забора:</label>
+                <div class="custom-select-wrapper">
+                  <div class="custom-select" id="country-select">
+                    <div class="custom-select__trigger"><span>Выберите страну</span></div>
+                    <div class="custom-options">
+                      <span class="custom-option" data-value="russia">Россия</span>
+                      <span class="custom-option" data-value="usa">США</span>
+                      <span class="custom-option" data-value="china">Китай</span>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="cargo-cost-calculation__row">
-                <label class="cargo-cost-calculation__label" for="city"
-                  >Город доставки:</label
-                >
-                <input
-                  class="cargo-cost-calculation__input animated-input"
-                  type="text"
-                  id="city"
-                  name="city"
-                  placeholder="Город"
-                />
+                <label class="cargo-cost-calculation__label" for="city">Город доставки:</label>
+                <input class="cargo-cost-calculation__input animated-input" type="text" id="city" name="city" placeholder="Город">
               </div>
               <div class="cargo-cost-calculation__row">
-                <label class="cargo-cost-calculation__label" for="cargo-type"
-                  >Тип груза:</label
-                >
-                <select
-                  class="cargo-cost-calculation__input animated-input"
-                  id="cargo-type"
-                  name="cargo-type"
-                >
-                  <option value="">Выберите тип груза</option>
-                </select>
+                <label class="cargo-cost-calculation__label" for="cargo-type">Тип груза:</label>
+                <div class="custom-select-wrapper">
+                  <div class="custom-select" id="cargo-type-select">
+                    <div class="custom-select__trigger"><span>Выберите тип груза</span></div>
+                    <div class="custom-options">
+                      <span class="custom-option" data-value="general">Общий</span>
+                      <span class="custom-option" data-value="perishable">Скоропортящийся</span>
+                      <span class="custom-option" data-value="hazardous">Опасный</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </fieldset>
 
