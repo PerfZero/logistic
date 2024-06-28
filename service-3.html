@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -219,6 +220,82 @@
             <span id="close-btn" class="close-btn">&times;</span>
           </div>
         </div>
+        <div class="burger-menu">
+          <i class="cyrcle"></i>
+          <p>Меню</p>
+          <label id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <ul>
+            <a href="/expalme.html"><li>О компании</li></a>
+            <li class="mobile-item">
+              Страны
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <li>Доставка из Еворопы</li>
+                <li>Доставка из Еворопы</li>
+                <li>Доставка из Еворопы</li>
+              </ul>
+            </li>
+            <li class="mobile-item">
+              Услуги
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <a href="/service-1.html"> <li>Консультации</li></a>
+                <a href="/service-2.html"> <li>Консультации</li></a>
+                <a href="/service-3.html"> <li>Консультации</li></a>
+                <a href="/service-4.html"> <li>Консультации</li></a>              </ul>
+            </li>
+            <li class="mobile-item">
+              Товары
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <li>Электроника</li>
+                <li>Одежда</li>
+                <li>Продукты</li>
+              </ul>
+            </li>
+            <a href="/about.html"><li>Проекты</li></a>
+            <a href="/contact.html"><li>Контакты</li></a>
+          </ul>
+          <div class="city">
+            <a href="" class="activ-city">Санкт-Петерург</a>
+            <a href="">Москва</a>
+            <a href="">Турция</a>
+          </div>
+          <div class="wrpa-menu_mobile">
+            <div class="contact-mobile-menu">
+              <p class="main-text__menu-mobile">Основной телефон</p>
+              <p class="main-tel__menu-mobile">+7 (812) 98 50 50 1</p>
+            </div>
+            <div class="contact-mobile-menu">
+              <p class="main-text__menu-mobile">Электроная почта</p>
+              <p class="main-tel__menu-mobile">info@ets-logistic.ru</p>
+            </div>
+          </div>
+          <div class="header__social">
+            <a href="#">
+              Whatsapp<img src="/assets/img/icon/whats.svg" alt="WhatsApp"
+            /></a>
+            <a href="#"
+              >Telegram<img src="/assets/img/icon/th.svg" alt="Telegram"
+            /></a>
+            <a href="#"
+              >Viber<img src="/assets/img/icon/viber.svg" alt="viber"
+            /></a>
+          </div>
+          <div class="bnt_mobile">
+            <div class="button">
+              <p>Связаться</p>
+              <a href="#" class="btn"></a>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
       </div>
     </header>
     <main>
@@ -356,7 +433,7 @@
         </div>
       </section>
 
-      <section class="company-features">
+    <section class="company-features">
         <div class="container">
           <div class="company-features__header pd-128">
             <h1 class="company-features__title-h1 title_mian">
@@ -437,7 +514,7 @@
                 Вы работаете с одним экспертом, который отвечает за всю цепочку.
               </p>
             </div>
-            <div class="business-plan__two-row">
+            <div class="business-plan__two-row pk">
               <div class="business-plan__two-row-item service_item-3">
                 <div class="image_row-item">
                   <img
@@ -454,6 +531,7 @@
                   колебании не влияют на стоимость товара.
                 </p>
               </div>
+ 
               <div class="business-plan__two-row-item service_item-3">
                 <div class="image_row-item">
                   <img
@@ -471,6 +549,68 @@
                   берем на себя.
                 </p>
               </div>
+ 
+              <div class="business-plan__two-row-item service_item-3">
+                <div class="image_row-item">
+                  <img
+                    src="/assets/img/icon/2_1.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+
+                <h2>Перевод в Европу в день оплаты. Комиссии от 1.5%</h2>
+                <p>
+                  Ваш поставщик в Европе получает деньги за товар в тот же день,
+                  когда вы оплачиваете товар в России. Комиссии для перевод
+                  от 1,5%
+                </p>
+
+        </div>
+            </div>
+
+            <div class="business-plan__two-row mb">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+              <div class="business-plan__two-row-item service_item-3">
+                <div class="image_row-item">
+                  <img
+                    src="/assets/img/icon/2_1.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+                <h2>Фиксированный курс валют по ЦБ на день оплаты</h2>
+                <p>
+                  После подписания договора и перевода денег на счёт
+                  в Российском банке вы фиксируете курс по ЦБ. Любые валютные
+                  колебании не влияют на стоимость товара.
+                </p>
+              </div>
+            </div>
+              <div class="swiper-slide">
+              <div class="business-plan__two-row-item service_item-3">
+                <div class="image_row-item">
+                  <img
+                    src="/assets/img/icon/2_1.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+                <h2>Безопасная, легальная схема</h2>
+                <p>
+                  Все абсолютно легально. Ваши деньги остаются в России.
+                  Турецкий партнер оплачивает ваш товар из своих ресурсов. Вы
+                  получаете товар на основании договора купли-продажи. Доставку
+                  берем на себя.
+                </p>
+              </div>
+            </div>
+              <div class="swiper-slide">  
               <div class="business-plan__two-row-item service_item-3">
                 <div class="image_row-item">
                   <img
@@ -491,16 +631,19 @@
             </div>
           </div>
         </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="completed-projects serv-pages-2">
+      <section class="completed-projects serv-page-2 fix-r">
         <div class="container">
           <div class="line_main-block">
             <h2 class="completed-projects__title title_mian">
               Выполненные проекты
             </h2>
           </div>
-          <div class="completed-projects__row">
+          <div class="completed-projects__row pk">
             <div class="completed-projects__column">
               <div class="completed-projects__card">
                 <img src="/assets/img/siems.png" alt="" />
@@ -532,6 +675,55 @@
               </div>
             </div>
           </div>
+          <div class="completed-projects__row mb">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide completed-projects__column">
+                  <div class="completed-projects__card">
+                    <img src="/assets/img/siems.png" alt="" />
+                    <div class="completed-projects__overlay">
+                      <div class="completed-projects__overlay-text">
+                        <h3 class="completed-projects__name">
+                          Cтанки для обработки металла siemens
+                        </h3>
+                        <div class="completed-projects__name-list">
+                          <p class="completed-projects__details">
+                            Сумма: €120 000
+                          </p>
+                          <p class="completed-projects__details">
+                            Сроки: 9 недель
+                          </p>
+                        </div>
+                      </div>
+                      <button class="services_bth pk"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide completed-projects__column">
+                  <div class="completed-projects__card">
+                    <img src="/assets/img/depo.png" alt="" />
+                    <div class="completed-projects__overlay">
+                      <div class="completed-projects__overlay-text">
+                        <h3 class="completed-projects__name">
+                          Перевозка компрессорной установки
+                        </h3>
+                        <div class="completed-projects__name-list">
+                          <p class="completed-projects__details">
+                            Сумма: €150 000
+                          </p>
+                          <p class="completed-projects__details">
+                            Сроки: 12 недель
+                          </p>
+                        </div>
+                      </div>
+                      <button class="services_bth pk"></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Добавьте другие проекты как новые swiper-slide -->
+              </div>
+            </div>
+          </div>
           <div class="button">
             <p>Все проекты</p>
             <a href="#" class="btn"></a>
@@ -551,7 +743,8 @@
                 перевозки груза в Россию.
               </p>
             </div>
-            <div class="services__advantages">
+
+            <div class="services__advantages pk">
               <div class="services__advantage revers">
                 <div class="services__text">
                   <h3 class="services__advantage-title">Перевод денег</h3>
@@ -563,6 +756,7 @@
                 </div>
                 <button class="services_bth_nubmer">1</button>
               </div>
+
               <div class="services__advantage revers">
                 <div class="services__text">
                   <h3 class="services__advantage-title">Перевод денег</h3>
@@ -574,6 +768,7 @@
                 </div>
                 <button class="services_bth_nubmer">2</button>
               </div>
+
               <div class="services__advantage revers">
                 <div class="services__text">
                   <h3 class="services__advantage-title">Разработка маршрута</h3>
@@ -585,6 +780,67 @@
                 </div>
                 <button class="services_bth_nubmer">3</button>
               </div>
+
+              <div class="services__advantage revers">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">
+                    Логистика до вашего склада
+                  </h3>
+                  <p class="services__advantage-description">
+                    Провезем груз через границу, проведем таможенную очистку и
+                    доставим товар на ваш склад со всем пакетом документов.
+                  </p>
+                </div>
+                <button class="services_bth_nubmer">4</button>
+              </div>
+            
+          </div>
+        
+
+
+            <div class="services__advantages mb">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+              <div class="services__advantage revers">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">Перевод денег</h3>
+                  <p class="services__advantage-description">
+                    Оплатим счёт поставщика через Турецкую компанию.
+                    Вы оплачиваете груз российской компании в рублях,
+                    по курсу ЦБ.
+                  </p>
+                </div>
+                <button class="services_bth_nubmer">1</button>
+              </div>
+            </div>
+              <div class="swiper-slide">
+              <div class="services__advantage revers">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">Перевод денег</h3>
+                  <p class="services__advantage-description">
+                    Оплатим счёт поставщика через Турецкую компанию.
+                    Вы оплачиваете груз российской компании в рублях,
+                    по курсу ЦБ.
+                  </p>
+                </div>
+                <button class="services_bth_nubmer">2</button>
+              </div>
+            </div>
+              <div class="swiper-slide">
+              <div class="services__advantage revers">
+                <div class="services__text">
+                  <h3 class="services__advantage-title">Разработка маршрута</h3>
+                  <p class="services__advantage-description">
+                    Построим эффективный маршрут для доставки груза
+                    на ваш склад. Упакуем груз, и застрахуем
+                    его перед отправкой. Отправим фото-отчёт.
+                  </p>
+                </div>
+                <button class="services_bth_nubmer">3</button>
+              </div>
+            </div>
+              <div class="swiper-slide">
               <div class="services__advantage revers">
                 <div class="services__text">
                   <h3 class="services__advantage-title">
@@ -598,11 +854,14 @@
                 <button class="services_bth_nubmer">4</button>
               </div>
             </div>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
       </section>
 
-      <section class="info-block">
+        <section class="info-block"> 
         <div class="container">
           <div class="info-block__row">
             <div class="info-block__column-one ser_3">
@@ -661,8 +920,12 @@
                 </li>
                 
               </ul>
-              <div class="button">
+              <div class="button pk">
                 <p>Запросить коммерческое предложение</p>
+                <a href="#" class="btn"></a>
+              </div>
+              <div class="button mb">
+                <p>Запросить КП</p>
                 <a href="#" class="btn"></a>
               </div>
             </div>
@@ -750,7 +1013,9 @@
             </div>
           </form>
         </div>
-      </section>
+      </section> 
+
+
     </main>
     <footer class="footer">
       <div class="container">
@@ -833,5 +1098,7 @@
       </div>
     </footer>
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   </body>
 </html>

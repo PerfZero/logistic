@@ -1751,6 +1751,12 @@ footer {
   border-top: 1px solid;
 }
 
+.compited-image__class img{
+  width: 100%;
+  max-width: 612px;
+  height: 100%;
+}
+
 .what-we-offer__item-title {
   font-size: clamp(1.375rem, 0.926vw + 1.167rem, 2rem);
   font-weight: 700;
@@ -2116,6 +2122,24 @@ footer {
   line-height: 140%;
   color: #080518;
   font-family: "Inter", sans-serif;
+}
+
+.page-servis-3{
+    padding-bottom: 0 !important;
+}
+
+.fix-p{
+  padding: 0;
+  padding-bottom: 128px;
+  margin-bottom: 128px !important ;
+}
+
+.fix-r{
+  margin-bottom: 128px !important ;
+}
+
+.serv-page-3{
+  padding-bottom: 50px;
 }
 
 .company-features__text {
@@ -2917,7 +2941,7 @@ footer {
 
 .contacts_page-title {
   font-weight: 700;
-  font-size: 60px;
+  font-size: clamp(2rem, 2.593vw + 1.417rem, 3.75rem);
   line-height: 105%;
   width: 100% !important;
   border-top: 1px solid;
@@ -2988,19 +3012,22 @@ footer {
 
 .expalme-title {
   font-weight: 700;
-  font-size: 60px;
+  font-size: clamp(1.5rem, 3.333vw + 0.75rem, 3.75rem);
   line-height: 105%;
   padding-bottom: 36px;
   width: 100% !important;
 }
 
+
 .expalme_img img {
   width: 100%;
+  max-width: 100%;
+  height: 100%;
 }
 
 .expalme__text {
-  width: 888px;
-  margin: 0 auto;
+  max-width: 888px;
+    margin: 0 auto;
   font-size: 18px;
   font-family: "Inter", sans-serif;
   margin-top: 80px;
@@ -3675,6 +3702,7 @@ footer {
 
   .info-block__column-one h2 {
     font-size: 24px;
+    margin-bottom: 15px;
   }
 
   .info-block__row {
@@ -3985,6 +4013,141 @@ footer {
     left: 0;
     width: 100%;
   }
+
+  .service-3-main {
+    height: 190px !important;
+  }
+
+  .service-3-main h1 {
+    margin-top: 180px;
+  }
+  .wrap_shema-contr {
+    flex-direction: column-reverse;
+  }
+
+  .wrap_shema-text {
+    border-right: none;
+  }
+
+  #Ru::before {
+    left: 149px;
+  }
+
+  #Company::before {
+    display: none;
+  }
+
+  #Ru::after {
+    left: 158px;
+  }
+
+  #Eu::before {
+    left: 149px;
+  }
+
+  #Eu::after {
+    left: 158px;
+  }
+
+  .page_shema .service-column {
+    padding: 10px;
+  }
+
+  .service-column .service-title {
+    margin-bottom: 10px;
+  }
+
+  .service_item-3 {
+    height: 300px;
+  }
+
+  .boats_sea {
+    position: relative;
+  }
+
+  .boats_sea > .services__advantages {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+  }
+
+  .ser_3 {
+    height: auto !important;
+  }
+  .ser_img img {
+    width: 100%;
+    max-width: 660px;
+    height: 100%;
+  }
+
+  .ser_img {
+    padding: 0 !important;
+  }
+
+  .ser_3 .mb {
+    display: flex;
+  }
+
+  .ser_3 h2 {
+    margin-bottom: 15px;
+  }
+
+  .rev-block{
+    flex-direction: column-reverse;
+  }
+
+  .ser_4 .mb{
+    display: flex;
+  }
+  .ser_4 {
+    height: auto !important;
+    width: auto;
+  }
+
+ .compited-card {
+    padding: 10px;
+
+}
+.compited__main-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 105%;
+  margin: 24px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  border-radius: 8px;
+  width: 75%;
+}
+
+.fip{
+  margin-bottom: 0;
+}
+
+.compited-card .mb{
+  display: flex;
+}
+
+  .compited-column {
+    flex-direction: column;
+}
+
+.contacts_page_wrapper .mb{
+  display: flex;
+}
+
+.contacts_page_wrapper {
+  padding: 10px;
+  height: 475px;
+
+}
 }
 @media (max-width: 500px) {
   .contacts_page__item {

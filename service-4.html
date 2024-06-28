@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -219,6 +220,82 @@
             <span id="close-btn" class="close-btn">&times;</span>
           </div>
         </div>
+        <div class="burger-menu">
+          <i class="cyrcle"></i>
+          <p>Меню</p>
+          <label id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <ul>
+            <a href="/expalme.html"><li>О компании</li></a>
+            <li class="mobile-item">
+              Страны
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <li>Доставка из Еворопы</li>
+                <li>Доставка из Еворопы</li>
+                <li>Доставка из Еворопы</li>
+              </ul>
+            </li>
+            <li class="mobile-item">
+              Услуги
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <a href="/service-1.html"> <li>Консультации</li></a>
+                <a href="/service-2.html"> <li>Консультации</li></a>
+                <a href="/service-3.html"> <li>Консультации</li></a>
+                <a href="/service-4.html"> <li>Консультации</li></a>              </ul>
+            </li>
+            <li class="mobile-item">
+              Товары
+              <span class="arrow"></span>
+              <ul class="submenu">
+                <li>Электроника</li>
+                <li>Одежда</li>
+                <li>Продукты</li>
+              </ul>
+            </li>
+            <a href="/about.html"><li>Проекты</li></a>
+            <a href="/contact.html"><li>Контакты</li></a>
+          </ul>
+          <div class="city">
+            <a href="" class="activ-city">Санкт-Петерург</a>
+            <a href="">Москва</a>
+            <a href="">Турция</a>
+          </div>
+          <div class="wrpa-menu_mobile">
+            <div class="contact-mobile-menu">
+              <p class="main-text__menu-mobile">Основной телефон</p>
+              <p class="main-tel__menu-mobile">+7 (812) 98 50 50 1</p>
+            </div>
+            <div class="contact-mobile-menu">
+              <p class="main-text__menu-mobile">Электроная почта</p>
+              <p class="main-tel__menu-mobile">info@ets-logistic.ru</p>
+            </div>
+          </div>
+          <div class="header__social">
+            <a href="#">
+              Whatsapp<img src="/assets/img/icon/whats.svg" alt="WhatsApp"
+            /></a>
+            <a href="#"
+              >Telegram<img src="/assets/img/icon/th.svg" alt="Telegram"
+            /></a>
+            <a href="#"
+              >Viber<img src="/assets/img/icon/viber.svg" alt="viber"
+            /></a>
+          </div>
+          <div class="bnt_mobile">
+            <div class="button">
+              <p>Связаться</p>
+              <a href="#" class="btn"></a>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
       </div>
     </header>
     <main>
@@ -274,9 +351,9 @@
         </div>
       </section>
 
-      <section class="info-block">
+       <section class="info-block">
         <div class="container">
-          <div class="info-block__row">
+          <div class="info-block__row rev-block">
             <div class="info-block__column-one ser_4 pd_50">
               <h2>Как понять, когда пора передать ВЭД:</h2>
               <ul class="info-block__list">
@@ -296,8 +373,13 @@
                   Нужно наладить логистику и международные грузоперевозки.
                 </li>
               </ul>
-              <div class="button">
+              <div class="button pk">
                 <p>Запросить коммерческое предложение</p>
+                <a href="#" class="btn"></a>
+              </div>
+
+              <div class="button mb">
+                <p>Запросить КП</p>
                 <a href="#" class="btn"></a>
               </div>
             </div>
@@ -313,7 +395,7 @@
         </div>
       </section>
 
-      <section class="completed-projects serv-pages-4">
+  <section class="completed-projects serv-pages-4 fip">
         <div class="container">
           <div class="line_main-block">
             <h2 class="completed-projects__title title_mian">Услуги</h2>
@@ -349,7 +431,12 @@
                   </li>
                   
                 </ul>
-                <div class="button">
+                <div class="button mb">
+                  <p>Запросить КП</p>
+                  <a href="#" class="btn"></a>
+                </div>
+
+                <div class="button pk">
                   <p>Запросить коммерческое предложение</p>
                   <a href="#" class="btn"></a>
                 </div>
@@ -384,7 +471,12 @@
                     Ежедневные отчеты по статусу груза.
                   </li>
                 </ul>
-                <div class="button">
+                <div class="button mb">
+                  <p>Запросить КП</p>
+                  <a href="#" class="btn"></a>
+                </div>
+
+                <div class="button pk">
                   <p>Запросить коммерческое предложение</p>
                   <a href="#" class="btn"></a>
                 </div>
@@ -395,14 +487,14 @@
         </div>
       </section>
 
-      <section class="completed-projects serv-pages-2 ">
+      <section class="completed-projects serv-page-2 fix-p">
         <div class="container">
           <div class="line_main-block">
-          <h2 class="completed-projects__title title_mian">
-            Выполненные проекты
-          </h2>
+            <h2 class="completed-projects__title title_mian">
+              Выполненные проекты
+            </h2>
           </div>
-          <div class="completed-projects__row">
+          <div class="completed-projects__row pk">
             <div class="completed-projects__column">
               <div class="completed-projects__card">
                 <img src="/assets/img/siems.png" alt="" />
@@ -431,6 +523,55 @@
                   </div>
                   <button class="services_bth"></button>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="completed-projects__row mb">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide completed-projects__column">
+                  <div class="completed-projects__card">
+                    <img src="/assets/img/siems.png" alt="" />
+                    <div class="completed-projects__overlay">
+                      <div class="completed-projects__overlay-text">
+                        <h3 class="completed-projects__name">
+                          Cтанки для обработки металла siemens
+                        </h3>
+                        <div class="completed-projects__name-list">
+                          <p class="completed-projects__details">
+                            Сумма: €120 000
+                          </p>
+                          <p class="completed-projects__details">
+                            Сроки: 9 недель
+                          </p>
+                        </div>
+                      </div>
+                      <button class="services_bth pk"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide completed-projects__column">
+                  <div class="completed-projects__card">
+                    <img src="/assets/img/depo.png" alt="" />
+                    <div class="completed-projects__overlay">
+                      <div class="completed-projects__overlay-text">
+                        <h3 class="completed-projects__name">
+                          Перевозка компрессорной установки
+                        </h3>
+                        <div class="completed-projects__name-list">
+                          <p class="completed-projects__details">
+                            Сумма: €150 000
+                          </p>
+                          <p class="completed-projects__details">
+                            Сроки: 12 недель
+                          </p>
+                        </div>
+                      </div>
+                      <button class="services_bth pk"></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Добавьте другие проекты как новые swiper-slide -->
               </div>
             </div>
           </div>
@@ -558,7 +699,7 @@
             </div>
           </form>
         </div>
-      </section>
+      </section> 
 
 
     </main>
@@ -643,5 +784,7 @@
       </div>
     </footer>
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   </body>
 </html>
